@@ -26,9 +26,9 @@ class Inventory:
         self.weapons.append(weapon)
         print(colored(f"Вы получили {weapon}", 'red'))
         if len(self.weapons) > 1:
-            print("You also have a second weapon.")
+            print("У вас уже есть второе оружие.")
             while True:
-                choice = input("Do you want to switch weapons? (yes/no): ")
+                choice = input("Желаете сменить его? (yes/no): ")
                 if choice.lower() == "yes":
                     self.weapons.remove(self.weapons[0])
                     self.weapons.remove(self.weapons[1])
@@ -38,16 +38,16 @@ class Inventory:
                 elif choice.lower() == "no":
                     break
                 else:
-                    print("Invalid choice. Please try again.")
+                    print("Неправильный ввод. Попробуйте снова.")
                     continue
     
     def add_armor(self, armor):
         self.armors.append(armor)
         print(colored(f"Вы получили {armor}", 'red'))
         if len(self.armors) > 1:
-            print("You also have a second armor.")
+            print("У вас уже есть броня.")
             while True:
-                choice = input("Do you want to switch armors? (yes/no): ")
+                choice = input("Желаеие сменить броню? (yes/no): ")
                 if choice.lower() == "yes":
                     self.armors.remove(self.armors[0])
                     self.armors.remove(self.armors[1])
