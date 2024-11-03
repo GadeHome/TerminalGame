@@ -14,7 +14,7 @@
 
 ```pip install termcolor```
 
-На последнем шаге запустите файл main.py
+На последнем шаге запустите файл ```main.py```
 
 ### Windows
 ```python main.py```
