@@ -1,4 +1,4 @@
-# TerminalGame
+# RPG Game
 
 ## Об игре
 
