@@ -35,24 +35,24 @@ def game_logic():
         command = input("Введите действие: ")
 
         if command == stats:
-            os.system('cls')
+            os.system('clear')
             print(colored(f'Атака: {p.attack}, здоровье: {p.hp}, защита: {p.shield}', 'yellow'))
         elif command == battle:
             progress_save()
-            os.system('cls')
+            os.system('clear')
             fight()
             break
         elif command == inventory:
-            os.system('cls')
+            os.system('clear')
             if cnt_floor <= 2:
                 print(colored("Инвентарь пуст", 'green'))
             elif cnt_floor > 2:
                 inv.display_inventory()
         elif command == status_floor:
-            os.system('cls')
+            os.system('clear')
             print(cnt_floor)
         elif command == '5':
-            os.system('cls')
+            os.system('clear')
             print("\nВыход из игры")
             quit()
 
@@ -61,15 +61,15 @@ def game_logic():
 def after_lose():
     global cnt_floor
     if lost_choose == 'y':
-        os.system('cls')
+        os.system('clear')
         cnt_floor = 1
         restore()
         fight()
     elif lost_choose == 'n':
-        os.system('cls')
+        os.system('clear')
         quit()
     else:
-        os.system('cls')
+        os.system('clear')
         print("Неверный ввод, автоматический перезапуск")
         restore()
         fight()
@@ -135,7 +135,7 @@ def safe_zone():
         cnt_floor +=1
         next_fight()
     elif choose == 'n':
-        os.system('cls')
+        os.system('clear')
         print(colored("Ваше приключение на этом закончено. Вы остались в безопасной зоне навсегда", 'yellow'))
         quit()
 
@@ -148,15 +148,15 @@ def fight_run():
     global run_choose
     run_choose = input("Вы уверены что хотите сбежать? (y/n): ")
     if run_choose == 'y':
-        os.system('cls')
+        os.system('clear')
         print(colored("Вы сбежали. Ваши приключения на этом закончились. Вы встретили свой конец в холодном подвале башни\n\n", 'yellow'))
         quit()
     elif run_choose == 'n':
-        os.system('cls')
+        os.system('clear')
         print(colored("\n\nВы продолжили бой", 'yellow'))
         fight()
     else:
-        os.system('cls')
+        os.system('clear')
         print("Неверный ввод, автоматический перезапуск")
         restore()
         fight()

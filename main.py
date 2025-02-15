@@ -19,7 +19,7 @@ save = "2"
 start = "1"
 
 def intro():
-    os.system('cls')
+    os.system('clear')
     print(colored(r" ______  __                                                                      __", 'yellow'))                     
     print(colored(r"/\__  _\/\ \                         __          __                             /\ \__", 'yellow'))                  
     print(colored(r"\/_/\ \/\ \ \___      __       _ __ /\_\    ____/\_\    ___      __         ____\ \ ,_\    __     _ __", 'yellow')) 
@@ -85,7 +85,7 @@ def story():
     'Ладно, не паниковать, надо выбираться отсуда',
     'Боже! Как же тут темно. Стоп. Здесь что-то есть. Похоже это лестницу. Кажется это единсвтенный путь выбраться отсюда.\n'
     ]
-    os.system('cls') 
+    os.system('clear') 
     i = 0
     
     for value in loading:
